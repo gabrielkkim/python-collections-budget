@@ -20,3 +20,4 @@ categories, count = zip(*top5)
 fig, ax = plt.subplots()
 ax.bar(categories, count) #, color=[numpy.ramdom.rand(3,) for _ in range(5) ]
 ax.set_title("# of Purchases by Category")
+plt.show()

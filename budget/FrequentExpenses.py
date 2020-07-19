@@ -1,4 +1,4 @@
-
+import matplotlib.pyplot as plt
 import collections
 from . import Expense
 
@@ -16,3 +16,5 @@ print(spending_counter)
 
 top5 = spending_counter.most_common(5)
 categories, count = zip(*top5)
+
+fig, ax = plt.subplots()

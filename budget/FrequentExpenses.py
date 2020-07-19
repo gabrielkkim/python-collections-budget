@@ -18,3 +18,4 @@ top5 = spending_counter.most_common(5)
 categories, count = zip(*top5)
 
 fig, ax = plt.subplots()
+ax.bar(categories, count) #, color=[numpy.ramdom.rand(3,) for _ in range(5) ]

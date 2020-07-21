@@ -19,8 +19,12 @@ class BudgetList():
     def __len__(self):
         return (len(self.expenses) + len(self.overages))
 
+    # Create an iterable that combines self.expenses and self.overages
+    # Create two local iterators for our internal lists using the default list iterator.
     def __iter__(self):
-        pass
+        self.iter_e = iter(self.expenses)
+        self.iter_o = iter(self.overages)
+        return self
 
     def __next__(self):
         pass

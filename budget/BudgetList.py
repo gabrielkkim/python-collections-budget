@@ -1,5 +1,5 @@
 from . import Expense
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 
 class BudgetList():
     def __init__(self, budget):
@@ -46,6 +46,8 @@ def main():
 
     for entry in myBudgetList:
         print(entry)
+
+    fig, ax = plt.subplots()
 
 if __name__ == "__main__":
     main()
